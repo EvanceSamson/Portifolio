@@ -306,3 +306,10 @@ button:hover{
   background: #0056b3;
  
 }
+@media(max-width:600px){
+    .body{
+        Padding:20px;
+        Margin:60px auto;
+        Width:290px;
+       } 
+   } 

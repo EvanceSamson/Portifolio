@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
     <title>Portifolio</title>
 </head>
+
+
 <body>
     <nav class="navbar">
+	
         <div class="navdiv">
-           <div class="logo"><a href="#">Portifolio</a></div>
+           <div class="logo"><a href="#">Evance</a></div>
            <ul>
-               <li><a href="#home">Home</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#skills">Skills</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#contact">Contact</a></li>
+               <li class="nav-item"><a href="#home">Home</a></li>
+               <li  class="nav-item"><a href="#projects">Projects</a></li>
+               <li class="nav-item"><a href="#skills">Skills</a></li>
+            
+               <li class="nav-item"><a href="#about" >About</a></li>
+               <li class="nav-item"><a href="#contact">Contact</a></li>
            </ul>
     
         </div>
     </nav>
 <section id="home">
-        <img  class="top-img"  src="./assets/code.jpg">
         <div class="hcontainer">
             <div class="title">
              <h1> 
@@ -39,11 +41,9 @@
           </div>
   
         </div>
-  
-        <div class="overlay"></div>
 
 </section>
-
+<hr/>
 <section id="about">
     <h2>ABOUT ME</h2>
     <div class="about-content">
@@ -82,7 +82,9 @@
 
     </ul>
 </div>
-</section id="projects">
+</section>
+
+<section id="projects">
 <h2>PROJECTS</h2>
 <div class="project-containter">
 <div class="projects">
@@ -92,7 +94,7 @@
         is fully responsive and its smooth featurers
     </P>
     <div class="link-projects">
-        <a  target="_blank" href="https://evancesamson.github.io/Portifolio/">Live demo</a>
+        <a  target="_blank" href="">Live demo</a>
         <a target="_blank" href="https://github.com/EvanceSamson/Portifolio">git repo</a>
 
     </div>
@@ -149,8 +151,8 @@
       .
     </P>
     <div class="link-projects">
-        <a  target="_blank" href="https://evancesamson.github.io/html-forms/">Live demo</a>
-        <a target="_blank" href="https://github.com/EvanceSamson/html-forms">git repo</a>
+        <a  target="_blank" href="https://evanceSamson.github.io/html-form-sign-in-sign-up-and-survey/">Live demo</a>
+        <a target="_blank" href="https://github.com/EvanceSamson/html-form-sign-in-sign-up-and-survey">git repo</a>
 
     </div>
 
@@ -188,12 +190,11 @@
 </div>
 
 </div>
-
-<section>
-
 </section>
 <section id="contact">
-    <h2>CONTACT</h2>
+    <h2>GET IN TOUCH</h2>
+    <P><span>Contact:</span>0990953044</P>
+    <p><span>Email:</span>evancesamson023@gmail.com</p>
      <form action="">
         <div class="card">
         <label for="name">Name</label>
@@ -206,9 +207,10 @@
         <textarea id="message" name="message" required placeholder="Type here" cols="3" rows="5"></textarea>
 
         <button type="submit">Submit</button>
-    </div>
+		</div>
      </form>
 
+<hr />
 
 </section>
     

@@ -2,6 +2,7 @@
 
 body{
     font-family: 'poppins',sans-serif;
+	align-items:center;
 }
 *{
     padding: 0;
@@ -27,7 +28,7 @@ body{
 
    .logo a{
       font-size: 30px;
-      font-weight:500;
+      font-weight:bold;
       color: black; 
    }
    li{
@@ -36,18 +37,33 @@ body{
     gap: 30px;
    }
    li a{
-    color: white;
+    color:blue;
     font-size: 20px;
     margin-right: 40px;
   
    }
-   .first-line,second-line{
+   .first-line{
     display:block;
-    color: white;
+    color: blue;
   }
+  .second-line{
+    display:block;
+    color: blue;
+    
+  }
+  #contact p{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  #contact span{
+    font-weight: bold;
+
+  }
+
   .third-line{
     display: block;
-    color:hsla(54, 91%, 45%, 0.993); 
+    color:green; 
 
   }
 h1{
@@ -64,9 +80,10 @@ h1{
 
   .header-image{
 
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
+    border-radius: 50%;
     }
 
 
@@ -83,22 +100,6 @@ h1{
     gap: 8px;
   }
 
-  .top-img{
- 
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index:0 ;
-  }
-
-  .overlay{
-    position: absolute;
-    background-color: #127eb880;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
   .hcontainer{
     z-index: 3;
     display: flex;
@@ -109,11 +110,26 @@ h1{
     width: 100%;
     padding: 20px;
   }
+  section{
+	  align-items:center;
+	  justify-content:center;
+	  margin:10px;
+	  padding:10px;
+  }
 
  h2{
+	 font-size:20px;
   text-align: center;
-  padding: 25px;
-  font-weight: 550;
+  font-weight: 400;
+  color:green;
+  border-width: 0.5px;
+ 
+ }
+ h3{
+	 font-size:19px;
+	 padding:10px;
+	 color:blue;
+	 font-weight:400;
  }
   .about-content{
     margin-top: 25px;
@@ -178,41 +194,7 @@ h1{
   width: 60%;
   animation: designing 3s;
 }
-@keyframes html{
-   0%{
-    width: 0%;
-   }
-   100%{
-    width: 90%;
-   }
-}
 
-@keyframes css{
-  0%{
-   width: 0%;
-  }
-  100%{
-   width: 70%;
-  }
-}
-
-@keyframes javascript{
-  0%{
-   width: 0%;
-  }
-  100%{
-   width: 55%;
-  }
-}
-
-@keyframes designing{
-  0%{
-   width: 0%;
-  }
-  100%{
-   width: 60%;
-  }
-}
 .link-projects a{
   display: inline-block;
   margin: 8px 8px 0 0;
@@ -264,34 +246,36 @@ h1{
 form{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  
-  
+  padding:18px;
+    
   }
   input{
-    margin: 0px;
+	  margin:10px;
     border: 1px solid rgba(182, 22, 88, 0.4);
     text-indent: 15px;
-    gap: 10px;
+    
  
 }
+
 .input-type{
   height: 30px;
   border-radius: 15px;
   outline: none;
+
 }
 .card{
-  width: 45%;
+ width: 50%; 
   padding: 10px;
   box-shadow: 2px 2px 3px 6px rgba(14, 13, 13, 0.212);
   display: flex;
 flex-direction: column;
 background: white;
 border-radius: 10px;
-gap:10px;
+
 }
 button{
   background: rgba(155, 155, 55, 0.788);
@@ -300,16 +284,76 @@ button{
   border-radius: 10px;
   border: none;
   height: 30px;
+  padding:18px;
+  margin-top:20px;
+  text-align:center;
+
 }
 button:hover{
   transition: 0.5s ease;
   background: #0056b3;
  
 }
-@media(max-width:600px){
-    .body{
-        Padding:20px;
-        Margin:60px auto;
-        Width:290px;
-       } 
-   } 
+
+textarea{
+	 border-radius: 10px;
+	 padding:15px;
+}
+@media only screen and (max-width:720px){
+    .logo a{
+      font-size: 17px;
+	}
+     li a{
+		font-size: 17px;
+		margin-right: 20px;
+	 }
+	.navdiv{
+	  gap:15px;
+	  justify-content: space-between;
+	   padding-left: 0px;
+	   gap:30px;
+	  }
+	 li{
+		 gap:30px;
+	 }
+	.navbar{
+   
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 30px;
+  }
+	h1{
+		font-size: 18px;
+	}
+	 .header-image{
+
+    height: 150px;
+    width: 150px;
+	 }
+
+	 .about-content{
+		 font-size:17px;
+		 text-align:center;
+	 }
+	 section{
+		 padding-left:10px;
+	 }
+	 .skill{
+		width: 60%;
+		padding:15px;
+	 }
+	 .project-containter{
+		 display:flex;
+		 flex-direction:column;
+	 }
+	 .projects{
+		width: 60%;
+		
+	 }
+	 .card{
+		width: 60%; 
+		
+		
+	 }
+	 
+}

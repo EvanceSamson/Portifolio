@@ -413,19 +413,6 @@ form{
   padding:18px;
     
   }
-/*   input{
-	  margin:10px;
-    border: 1px solid rgba(182, 22, 88, 0.4);
-    text-indent: 15px;
-}
-
-.input-type{
-  height: 40px;
-  border-radius: 4px;
-  outline: none;
-  font-size: 18px;
-
-} */
 
 input, textarea{
   width: 100%;
@@ -475,14 +462,7 @@ form button:hover{
  
 /* }
 
-textarea{
-	 border-radius: 4px;
-   padding: 8px 4px;
-   border: 1px solid rgba(182, 22, 88, 0.4);
-   outline: none;
-   font-size: 18px;
-   text-indent: 15px;
-} */
+
 
 /* form */
 .contact-wrapper{
@@ -730,4 +710,5 @@ section{
   gap: 14px;
 }
 }
+
  
